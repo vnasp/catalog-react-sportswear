@@ -1,25 +1,59 @@
-# Tienda Deportiva Delta
+# Catálogo Deportivo - Tienda Delta
 
-Bienvenido al repositorio de la Tienda Deportiva Delta. Un sitio web tipo catálogo diseñado para clubes amateur y torneos, donde los usuarios pueden personalizar y solicitar cotizaciones para ropa deportiva.
+Sitio web tipo catálogo desarrollado para una marca de ropa deportiva enfocada en clubes amateur y torneos. Los usuarios pueden explorar productos, personalizar talla y entalle, y solicitar cotizaciones directamente desde la página.
 
-## Características 🌟
+> Nota: Proyecto realizado como trabajo freelance para un cliente.
 
-- **Catálogo Dinámico**: Explora nuestra amplia selección de indumentaria deportiva, incluyendo tank tops, camisetas de manga larga, y hoodies.
-- **Agregar al Carrito**: Interfaz intuitiva para combinar entalle, tipo de vestimenta, talla y agregar al carrito de cotización.
-- **Formulario de Cotización**: Solicita el costo de tu pedido, enviando una solicitud de cotización directamente desde la página.
-- **Diseño Responsivo**: Navega desde cualquier dispositivo gracias a Bootstrap y CSS personalizado.
+## Vista previa
 
-## Tecnologías Utilizadas 💻
+[https://vnasp.github.io/catalog-react-sportswear/](https://vnasp.github.io/catalog-react-sportswear/)
 
-Este proyecto está construido utilizando las siguientes tecnologías y bibliotecas:
+## Funcionalidades
 
-- **ReactJS**: Se utilizó `useState` para manejar los estado.
-  - **React Context API**: Se usó `useContext` para gestionar el estado global de la aplicación.
-- **EmailJS**: Para manejar el envío de formularios de cotización por correo electrónico..
-- **SwiperJS**: Para mostrar.
-- **TailwindCSS**: Para un diseño responsivo y personalizado
+- Catálogo dinámico con tank tops, camisetas manga larga y hoodies
+- Selector de entalle, tipo, talla y cantidad
+- Carrito de cotización con mínimo de 10 prendas
+- Formulario de cotización con envío por email (EmailJS)
+- Slider de imágenes de productos y clientes (SwiperJS)
+- Botones para compartir en redes sociales
+- Diseño responsive con Tailwind CSS
 
+## Tecnologías
 
-## Despliegue 🚀
+- React 18
+- Vite
+- Tailwind CSS
+- Context API (estado global)
+- EmailJS
+- SwiperJS
+- React Icons
+- React Share
 
-El sitio web está desplegado y accesible en: https://vnasp.github.io/catalog-frontend-react-user/
+## Estructura del Proyecto
+
+```
+catalog-react-sportswear/
+├── public/
+│   └── assets/img/
+├── src/
+│   ├── components/
+│   │   ├── CatalogForm.jsx
+│   │   ├── CatalogType.jsx
+│   │   ├── CatalogSize.jsx
+│   │   ├── CatalogFit.jsx
+│   │   ├── CatalogQuantity.jsx
+│   │   ├── CartDetail.jsx
+│   │   ├── CartEmpty.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── Cover.jsx
+│   │   ├── Customers.jsx
+│   │   ├── Nav.jsx
+│   │   ├── Footer.jsx
+│   │   └── ...
+│   ├── context/
+│   │   └── DataContext.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── vite.config.js
+└── package.json
+```
